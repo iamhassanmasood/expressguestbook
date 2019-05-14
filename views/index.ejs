@@ -1,0 +1,23 @@
+<% include header %>
+<% if (entries.length) { %>
+<% entries.forEach(function(entry) { %>
+<div class="panel panel-default col-sm-8 m-auto">
+<div class="panel-heading  col-sm-8">
+<div class="pull-right  col-sm-8 ">
+    <strong>
+        <%= entry.title %>
+    </strong>
+</div>
+<%= entry.published %>
+</div>
+<div class="panel-body  col-sm-8 ">
+<%= entry.body %>
+</div>
+</div>
+<% }) %>
+<% } else { %>
+<div class=" col-sm-8 m-auto">
+    No entries! <a href="/new-entry">Add one!</a>    
+</div>
+<% } %>
+<% include footer %>

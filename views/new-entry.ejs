@@ -1,0 +1,19 @@
+<% include header %>
+<div class="col-sm-8 form-group m-auto">
+    <h2>Write a new entry</h2>
+</div>
+<form method="post" role="form">
+<div class="col-sm-8 form-group m-auto">
+<label for="title">Title</label>
+<input type="text" class="form-control" id="title" name="title" placeholder="Entry title" required>
+</div>
+<div class="col-sm-8 form-group m-auto">
+<label for="content">Entry text</label>
+<textarea class="form-control" id="body" name="body"
+ placeholder="Love Express!" rows="3" required></textarea>
+</div>
+<div class="col-sm-8 form-group m-auto">
+<input type="submit" value="Post entry" class="btn btn-primary mt-4">
+</div>
+</form>
+<% include footer %>
